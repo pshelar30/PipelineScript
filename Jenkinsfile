@@ -14,6 +14,12 @@ pipeline {
                 bat 'Build.bat'
             }
         }
+        stage('Unit-Testing'){
+            steps{
+                echo "Testing the code"
+                bat 'Test.bat'
+            }
+        }
         stage('Delpoy'){
             steps{
                 echo "Deploying the project";
